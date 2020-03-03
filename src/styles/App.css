@@ -1,0 +1,260 @@
+html,
+body,
+#root,
+.App {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  text-align: center;
+  background: #fbf2ea;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+h1 {
+  color: #f35b1c;
+}
+
+h1,
+h2,
+h3,
+h5,
+h6 {
+  margin: 10px;
+}
+h3 {
+  color: #512b2b;
+}
+input[type='checkbox'] {
+  height: 20px;
+  width: 20px;
+  margin-left: 8px;
+}
+
+.defaultBtn {
+  background-color: #f35b1c !important;
+  color: white !important;
+  margin: 0 2.5rem;
+}
+
+label {
+  margin: 1.5rem 0;
+}
+
+.bar {
+  padding: 10px;
+  margin: 10px;
+  color: #333;
+  background: #fafafa;
+  border: 1px solid #ccc;
+}
+
+.error {
+  color: #ba3939;
+  background: #ffe0e0;
+  border: 1px solid #a33a3a;
+  animation: blinker 3s linear infinite;
+}
+
+input {
+  display: inline-block !important;
+}
+
+.form-control {
+  width: auto !important;
+}
+
+.current-value {
+  text-align: center;
+  color: #f35b1c;
+  font-weight: 800;
+}
+table,
+td,
+th {
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+}
+
+/* Bootstrap import literals */
+
+.mt-2,
+.my-2 {
+  margin-top: 0.5rem !important;
+}
+
+.py-1 {
+  padding-top: 0.25rem !important;
+}
+
+.mt-3 {
+  margin-top: 1rem !important;
+}
+.my-2 {
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.mt-5 {
+  margin-top: 3rem !important;
+}
+
+.my-5 {
+  margin-bottom: 3rem !important;
+}
+.text-center {
+  text-align: center !important;
+}
+
+.mx-auto {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+.d-block {
+  display: block !important;
+}
+.ml-5 {
+  margin-left: 3rem !important;
+}
+.float-left {
+  float: left !important;
+}
+.float-right {
+  float: right !important;
+}
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.ml-2 {
+  margin-left: 0.5rem !important;
+}
+.my-5 {
+  margin-top: 3rem !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .slidecontainer {
+    width: 100%;
+  }
+
+  .defaultBtn {
+    margin: 0.5rem 0 !important;
+    width: 90%;
+    float: none;
+  }
+}
+
+.slidecontainer {
+  width: 60%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #f35b1c;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #f35b1c;
+  cursor: pointer;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}

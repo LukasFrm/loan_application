@@ -1,0 +1,2 @@
+export const TOGGLE_CHECKBOX = 'CHECKBOX_TOGGLE'
+export const SAVE_INPUT = 'SAVE_INPUT'
